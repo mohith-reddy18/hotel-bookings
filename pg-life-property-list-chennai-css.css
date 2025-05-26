@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.a{
+    top: 0;
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 2;
+    align-items: center;
+}
+.c11{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+.c12{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.i1{
+    width: 130px;
+    margin: 0px;
+}
+.i2{
+    width: 20px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.p1{
+    font-size: 18px;
+    align-items: center;
+    color: gray;
+    margin-right: 10px;
+}
+.b{
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+.c1{
+    height: 50%;
+    width: 100%;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.c2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.p2{
+    color:white;
+}
+.i4{
+    background-color: white;
+    border-radius: 50px;
+    width: 20px;
+    color: white;
+}
+.div1{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i5{
+    padding: 5px;
+    width: 40px;
+    border: solid 1px black;
+    border-radius: 45px;
+}
+.p3{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.div2{
+    padding-left: 30px;
+    padding-right: 30px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div3{
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: 700px;
+    padding: 10px;
+    display: flex;
+}
+.i6{
+    width: 200px;
+}
+.i7{
+    width: 15px;
+}
+.div4{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.i8{
+    opacity: 0.7;
+    width: 14px;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(121, 122, 121);
+    color: white;
+}
+#i{
+    color:#aaa;
+}
+.menu-button{
+    display: none;
+    align-items: end;
+    justify-content: end;
+    color: black;
+}
+@media(max-width : 500px){
+    .hideonmobile{
+        display:none;
+    }
+    .menu-button{
+        display: flex;
+        z-index: 1000;
+        color: black;
+        fill: black;
+    }
+    .sidebar{
+        width: 20%;
+    }
+    .c111{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+    }
+}
+@media(max-width :380px){
+    .sidebar{
+        width: 100%;
+    }
+}      
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sidebar{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    z-index: 999;
+     height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.945);
+    backdrop-filter: transparent(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.sidebar div{
+    width: 100%;
+}
+.sidebar span{
+    width: 100%;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav div{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.c11{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+.c111{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.c12{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.hideonmobile{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.i1{
+    width: 130px;
+     margin: 0px;
+}
+body{
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Open Sans',sans-serif;
+}
