@@ -6,6 +6,7 @@
      font-family: 'Open Sans', sans-serif;
 }
 body{
+    width: 100%;
       background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,37 +23,46 @@ body{
 .b{
     position: relative;
     background-color: transparent;
-    height: 500px;
+    max-height: 500px;
+    min-width: 300px !important;
     width: 100%;
+    aspect-ratio: 16/9;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .c{
-    height: 600px;
+    top: 0;
+    min-height: 600px;
+    height: auto;
     width: 100%;
-    position:relative;
+    position: relative;
     background-color: white;
 }
-.d{
+.z{
+    padding-top: 25px;
     background-color: white;
     position: relative;
-    height: 150px;
+    min-height: 150px;
+    height: auto;
     width: 100%;
     background-color: black;
 }
 .sidebar{
+    padding-left: 10px;
+    padding-top: 15px;
     height: 100%;
     width: 50%;
     align-items: center;
-    z-index: 999;
+    z-index: 99;
      height: 100vh;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.945);
-    backdrop-filter: transparent(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
+    border-end-start-radius: 10px;
     right: 0;
     display: none;
     flex-direction: column;
@@ -96,6 +106,7 @@ nav div{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-bottom: 10px;
 }
 .c12{
     display: flex;
@@ -122,25 +133,20 @@ nav div{
     justify-content: flex-end;
     align-items: center;
 }
-.b1{
-    
-    font-size: 18px;
-}
 .p1{
-    font-size: 20px;
-    align-items: center;
-    color: gray;
-    margin-right: 20px;
+    opacity : 0.5; font-size: 20px;
 }
-.d1{
+.z1{
     height: 50%;
     width: 100%;
-    gap: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
 }
-.d2{
+.z2{
+    padding-top: 10px;
     height: 50%;
     width: 100%;
     display: flex;
@@ -151,18 +157,19 @@ nav div{
 .p2{
     color:white;
 }
-.i3{
-    background-color: white;
-    border-radius: 50px;
-    width: 20px;
-    color: white;
-}
 .i4{
     z-index: 1;
-    height: 500px;
+    max-height: 500px;
+    min-height: auto;
+    min-width: 300px !important;
     width: 100%;
+    aspect-ratio: 16/9;
     display: block;
     opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     position: fixed;
     filter: brightness(50%);
 }
@@ -194,28 +201,27 @@ nav div{
     z-index: 2; 
 }
 .input{
-    padding-left: 5px;
     height: 50px;
-    width: 900px;
+    width: 110%;
     font-size: 30px;
     border: none;
     border-radius: 5px;
     transition: border .3s ease-in;
 }
 .c31{
-    height: 30%;
-    padding-top: 100px;
-    
+    height: 25%;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .c32{
-    height: 70%;
+    padding-top: 100px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
 }
 .i5{
     padding: 20px;
@@ -237,6 +243,7 @@ nav div{
 }
 #i{
     color:#aaa;
+    text-decoration: none;
 }
 .menu-button{
     display: none;
@@ -244,7 +251,55 @@ nav div{
     justify-content: end;
     color: black;
 }
-@media(max-width : 500px){
+
+
+@media(max-width:900px){
+    .c32{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 0px;
+    }
+    .c{
+        height: 400px;
+    }
+    .i5{
+        width: 130px;
+        border-radius: 100px;
+    }
+    .label{
+        font-size: 45px;
+    }
+    .button{
+        width: 180px;
+        height: 45px;
+    }
+    .input{
+        height: 45px;
+        font-size: 28px;
+    }
+}
+@media(max-width:767px){
+    .c32{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        gap: 30px;
+    }
+    .c{
+        height: 950px;
+    }
+    .label{
+        padding-top: 25px;
+    }
+    .c31{
+    height: 200px;
+    padding-top: 0px;
+  }
+}
+@media(max-width : 700px){
     .hideonmobile{
         display:none;
     }
@@ -255,7 +310,7 @@ nav div{
         fill: black;
     }
     .sidebar{
-        width: 20%;
+        width: 50%;
     }
     .c111{
         width: 100%;
@@ -263,15 +318,266 @@ nav div{
         justify-content: center;
         padding-left: 10px;
     }
+    .z1{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .c32{
+         gap: 30px !important;
+    }
+}
+@media(max-width:650px){
+    .c{
+        height: 950px;
+    }
+    .label {
+    font-size: 37px !important;
+  }
+  .button {
+    width: 165px !important;
+    height: 37px !important;
+    font-size: 25px !important;
+  }
+  .input {
+    height: 37px !important;
+    font-size: 25px !important;
+    width: 110% !important; 
+  }
+  .c32{
+    height: 700px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px !important;
+    padding: 0px;
+  }
+  .c31{
+    height: 200px;
+    padding-top: 0px;
+  }
+   .a{
+        height: 50px;
+    }
+    .i1{
+        width: 110px;
+    }
+    .menu{
+        width: 35px !important;
+    }
+}
+@media (max-width: 600px) {
+  .label {
+    font-size: 35px ;
+  }
+  .button {
+    width: 140px ;
+    height: 35px ;
+    font-size: 20px ;
+  }
+  .input {
+    height: 35px ;
+    font-size: 20px;
+    width: 100% ; 
+  }
+  .z1{
+    display: flex !important;
+    flex-direction: column !important;
+    z-index: 1;
+    padding-top: 10px;
+    gap: 2px;
+    height: 100%;
+    background-color: black;
+  }
+  .z2{
+    padding-bottom: 25px;
+  }
+  .c32{
+         gap: 30px !important;
+    }
+}
+@media(max-width:576px){
+    .label {
+        padding-top: 30px;
+        font-size: 30px !important;
+    }
+   .button {
+        width: 120px !important;
+        height: 30px !important;
+        font-size: 17px !important;
+    }
+    .input {
+        height: 30px !important;
+        font-size: 17px !important;
+        width: 110% !important; 
+    }
+     .a{
+        height: 40px;
+    }
+    .i1{
+        width: 100px;
+    }
+    .menu{
+        width: 30px !important;
+    }
+    .c32{
+         gap: 30px !important;
+    }
+}
+@media(max-width:450px){
+    .label {
+        padding-top: 0px;
+        font-size: 25px !important;
+    }
+   .button {
+        width: 105px !important;
+        height: 25px !important;
+        font-size: 14px !important;
+    }
+    .input {
+        height: 25px !important;
+        font-size: 14px !important;
+        width: 110% !important; 
+    }
+    .b{
+        padding-top: 40px;
+    }
+    .a{
+        height: 40px;
+    }
+    .i1{
+        width: 100px;
+    }
+    .menu{
+        width: 30px !important;
+    }
+    .i4{
+        padding-top: 15px !important;
+    }
+    .c32{
+        height: 650px !important;
+         gap: 25px !important;
+    }
+    .m1{
+        font-size: 45px !important;
+    }
+    .i5{
+        width: 110px;
+    }
 }
 @media(max-width :380px){
     .sidebar{
         width: 100%;
     }
+    .i4{
+        padding-top: 15px !important;
+    }
+    .b{
+        padding-top: 0px !important;
+    }
+ .label {
+    padding-top: 30px;
+    font-size: 20px !important;
+  }
+  .button {
+    width: 95px !important;
+    height: 25px !important;
+    font-size: 18px !important;
+  }
+  .input {
+    height: 25px !important;
+    font-size: 15px !important;
+    width: 120% !important; 
+  }
+  .a{
+        height: 40px;
+    }
+    .i1{
+        width: 100px;
+    }
+    .menu{
+        width: 30px !important;
+    }
+    .c32{
+         gap: 25px !important;
+    }
+}
+@media(max-width:360px){
+     .inside{
+        width: 100%;
+    }
+    .b{
+        padding-top: 40px !important;
+    }
+    .i4{
+        padding-top: 15px;
+    } 
+    .c32{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+    }
+    .label {
+    padding-top: 0px;
+    font-size: 18px !important;
+  }
+  .button {
+    width: 85px !important;
+    height: 22px !important;
+    font-size: 15px !important;
+  }
+  .input {
+    height: 20px !important;
+    font-size: 15px !important;
+    width: 120% !important; 
+  }
+  .c31{
+    padding-top: 0px;
+    height: 150px;
+  }
+  .c32{
+        height: 550px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px !important;
+        padding-top: 0px;
+    }
+    .c{
+        height: 750px;
+    }
+    .i5{
+        width: 100px;
+        border-radius: 100px;
+    }
+    .m1{
+        padding-top: 20px;
+        font-size: 35px !important;
+    }
+    .place{
+    min-width: 130px !important;
+    min-height: 130px !important;
+    }
+    .space{
+        padding-top: 40px;
+    }
+    .a{
+        height: 40px;
+    }
+    .i1{
+        width: 100px;
+    }
+    .menu{
+        width: 30px !important;
+    }
+    
 }      
+
+
 nav a{
     height: 100%;
-    padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -283,4 +589,145 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.popup{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     z-index: 10000;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.popup:target{
+    opacity: 1;
+    pointer-events: all;
+    background-color: rgba(0,0,0,0.5);   
+}
+.button1{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin:0px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.inside{
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 400px;
+    height: auto;
+    z-index: 11;
+    min-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.div1{
+    display: flex;
+    border: 1px solid #ced4da;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.div2{
+    margin: 0px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 100%;
+}
+.f1{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.input1{
+    padding: 15px;
+    height: 40px;
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+}
+#ii1{
+    fill: black;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(242, 232, 232);
+    font-size: 20px; 
+    border: 1px solid #ced4da;
+}
+.f2{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 80%;
+    font-weight: 500;
+    gap: 5px;
+}
+.f3{
+    width: 90%;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.button2{
+    background-color: #4dc7bc;
+    border-color: #4dc7bc;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.div3{
+    background-color: whitesmoke;
+    height: 60px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    min-height: 150px;
+}
+.m1{
+    font-size: 50px;
+}
+.space{
+    display: none; 
+    padding-top: 60px;
+    top: 0;
+}
+.menu{
+    filter: brightness(40%);
+    width: 40px; 
 }
