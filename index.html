@@ -2,45 +2,234 @@
 <html>
     <head>
         <title>PG Life</title>
-        <link rel="stylesheet" href="pg-life-home-page-css.css"/>
+        <link rel="stylesheet" href="pg-life-home-css.css"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
     <body>
-          <nav class="a"> 
+          <nav  class="a"> 
             <ul class="sidebar">
-             <li onclick="hidesidebar()" style="height: auto;"><a href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="width: 50px;" /></a></li>
-            <div class="c12">
-               <div style=" height: auto;display: flex;align-items: center;gap: 5px;"> <i class="fa fa-user" id="i" aria-hidden="true"></i>
-                <span style="opacity : 0.5; font-size: 18px;">Signup</span></div>
-                <div style="height: auto; display: flex;align-items: center;gap: 5px;"><i class="fa fa-sign-in-alt" id="i" aria-hidden="true"></i>
-                <span class="p1">Login</span></div>
-            </div>
+             <li onclick="hidesidebar()" style="height: auto;"><a href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="width: 50px;filter: brightness(30%);" /></a></li>
+           <li> 
+             <div class="c12">
+             <a href="#popup1" class="button1" style="text-decoration: none;">
+                 <div style=" height: auto;display: flex;align-items: center;gap: 5px;font-size: 25px;"> 
+                
+                    <i class="fa fa-user" id="i" style="filter: brightness(80%);" aria-hidden="true"></i>
+                        <p style="opacity : 0.5; font-size: 20px;margin-top: 15px;">
+                          Signup
+                        </p>
+                 </div>
+                 </a>
+                <a href="#popup2" class="button1" style="text-decoration: none;">
+                 <div style="height: auto; display: flex;align-items: center;gap: 5px;font-size: 25px;text-decoration: none;"><i class="fa fa-sign-in-alt" style="filter: brightness(80%);" id="i" aria-hidden="true"></i>
+                <p class="p1" style="text-decoration: none;margin-top: 15px;" >
+                    Login
+                </p>
+                </div></a>
+             </div>
+            </li>
+
+
+             <div id="popup1" class="popup">
+                <div class="inside">
+                    <div class="div1">
+                        <h3 style="width: auto;">Signup with PGLife</h3>
+                           <a href="#" style="justify-content: right;width: 20%;">
+                              <img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="width: 25px;filter: brightness(50%);" />
+                           </a>
+                    </div>
+                    <div class="div2">
+                        <form style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">person</span>
+                                <input name="name" type="text" placeholder="Full Name" class="input1">
+                            </div>
+                            <div class="f1">
+                               <span class="material-icons" id="ii1">phone</span>
+                                <input name="Phone" type="tel" placeholder="Phone Number" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">email</span>
+                                <input name="email" type="email" placeholder="Email" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">lock</span>
+                                <input name="password" type="password" placeholder="Password" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">school</span>
+                                <input name="college" type="text" placeholder="College Name" class="input1">
+                            </div>
+                            <div class="f2">
+                                I'm a 
+                                <input type="radio" name="gender" value="male" style="margin-left: 20px;">Male
+                                <input type="radio" name="gender" value="female" style="margin-left: 20px;">Female
+                            </div>
+                            <div class="f3">
+                                <button class="button2">Create Account</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="div3">
+                        <p style="display: flex;justify-content: center;align-items: center;">already have an account?<a href="pg-life-home.html#popup2" style="color: #88b8e9;font-weight: 700;">Login</a></p>
+                    </div>
+                </div>
+             </div>
+
+
+
+             <div id="popup2" class="popup">
+                <div class="inside">
+                     <div class="div1">
+                        <h3 style="width: auto;">Login with PGLife</h3>
+                           <a href="#" style="justify-content: right;width: 20%;">
+                              <img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="width: 25px;filter: brightness(50%);" />
+                           </a>
+                    </div>
+                    <div class="div2">
+                        <form style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+                          <div class="f1">
+                                <span class="material-icons" id="ii1">email</span>
+                                <input name="email" type="email" placeholder="Email" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">lock</span>
+                                <input name="password" type="password" placeholder="Password" class="input1">
+                            </div>
+                            <div class="f3">
+                                <button class="button2">Login</button>
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="div3">
+                       <p style="display: flex;justify-content: center;align-items: center;"><a href="pg-life-home.html#popup1" style="color: #88b8e9;font-weight: 700;margin-right: 5px;">Click here</a>to register a new account</p>
+                     </div>
+                </div>
+             </div>
           </ul> 
-          <ul> 
+         
+
+
+
+          <ul style="height: 100%;"> 
             <div style="display: flex;width: 100%;height: 100%;width: 100%;">
             <div class="c111">
-                <a href="index.html"><img src="logo.png" class="i1"/></a>
+                <a href="pg-life-home.html">
+                    <img src="logo.png" class="i1"/>
+                </a>
             </div>
-            <div class="hideonmobile">
-               <div style="display: flex;align-items: center;gap: 5px;"> <i class="fa fa-user" id="i" aria-hidden="true"></i>
-                <span style="opacity : 0.5; font-size: 18px;">Signup</span></div>
+           <div class="hideonmobile">
+               <a href="#popup3" style="align-items: center;height: 100%;justify-content: center;text-decoration: none;">
+                    <div style="display: flex;align-items: center;gap: 5px;justify-content: center;"> 
+                        <i class="fa fa-user" id="i" style="filter: brightness(80%);" aria-hidden="true"></i>
+                        <p style="opacity : 0.5; font-size: 18px;margin-top: 18px;">Signup</p>
+                    </div>
+                </a>
                 <span style="font-size: 30px;opacity: 0.5;align-items: center;">|</span>
-                <div style="display: flex;align-items: center;gap: 5px;"><i class="fa fa-sign-in-alt" id="i" aria-hidden="true"></i>
-                <span class="p1">Login</span></div></div>
-                <li class="menu-button" onclick=showsidebar() style="width: 50px;"><a style="display: flex;align-items: end;justify-content: end;width: 100%;" href="#"><img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="color: black;" /></a></li>
+                <a href="#popup4" style="align-items: center;height: 100%;justify-content: center;text-decoration: none;">
+                    <div style="display: flex;align-items: center;gap: 5px;">
+                        <i class="fa fa-sign-in-alt" id="i" style="filter: brightness(80%);font-size: 20px;" aria-hidden="true"></i>
+                        <span class="p1" style=" margin-right: 20px;"> Login </span>
+                    </div>
+                </a>
             </div>
-           </ul> 
+                <li class="menu-button" onclick=showsidebar() style="width: 50px;">
+                    <a style="display: flex;align-items: end;justify-content: end;width: auto;margin-right:30px;" href="#">
+                        <img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" class="menu"/>
+                    </a>
+                </li>
+            </div>
+
+
+            <div id="popup3" class="popup">
+                <div class="inside">
+                    <div class="div1">
+                        <h3 style="width: auto;">Signup with PGLife</h3>
+                           <a href="#" style="justify-content: right;width: 20%;">
+                              <img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="width: 25px;filter: brightness(50%);" />
+                           </a>
+                    </div>
+                    <div class="div2">
+                        <form style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">person</span>
+                                <input name="name" type="text" placeholder="Full Name" class="input1">
+                            </div>
+                            <div class="f1">
+                               <span class="material-icons" id="ii1">phone</span>
+                                <input name="Phone" type="tel" placeholder="Phone Number" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">email</span>
+                                <input name="email" type="email" placeholder="Email" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">lock</span>
+                                <input name="password" type="password" placeholder="Password" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">school</span>
+                                <input name="college" type="text" placeholder="College Name" class="input1">
+                            </div>
+                            <div class="f2">
+                                I'm a 
+                                <input type="radio" name="gender" value="male" style="margin-left: 20px;">Male
+                                <input type="radio" name="gender" value="female" style="margin-left: 20px;">Female
+                            </div>
+                            <div class="f3">
+                                <button class="button2">Create Account</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="div3">
+                        <p style="display: flex;justify-content: center;align-items: center;">already have an account?<a href="pg-life-home.html#popup4" style="color: #88b8e9;font-weight: 700;">Login</a></p>
+                    </div>
+                </div>
+             </div>
+
+
+
+             <div id="popup4" class="popup">
+                <div class="inside">
+                     <div class="div1">
+                        <h3 style="width: auto;">Login with PGLife</h3>
+                           <a href="#" style="justify-content: right;width: 20%;">
+                              <img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" style="width: 25px;filter: brightness(50%);" />
+                           </a>
+                    </div>
+                    <div class="div2">
+                        <form style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+                          <div class="f1">
+                                <span class="material-icons" id="ii1">email</span>
+                                <input name="email" type="email" placeholder="Email" class="input1">
+                            </div>
+                            <div class="f1">
+                                <span class="material-icons" id="ii1">lock</span>
+                                <input name="password" type="password" placeholder="Password" class="input1">
+                            </div>
+                            <div class="f3">
+                                <button class="button2">Login</button>
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="div3">
+                        <p style="display: flex;justify-content: center;align-items: center;"><a href="pg-life-home.html#popup3" style="color: #88b8e9;font-weight: 700;margin-right: 5px;">Click here</a>to register a new account</p>
+                    </div>
+                </div>
+             </div>
+           </ul></div> 
         </nav>
 
+        <div class="space"></div>
 
         <div class="b">
             <div style="position: absolute; gap: 0px;box-shadow: 10000px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
                 <p class="label">Happiness per Square Foot</p>
-                <input class="input" type="search" placeholder="  Enter your City to search for PGs"/>
+                <input class="input" type="search" placeholder=" Enter your City to search for PGs"/>
                 <button class="button"><span>Search</span></button>
             </div>
             <img src="bg.png" class="i4" alt="background img"/>
@@ -50,33 +239,35 @@
 
         <div class="c">
             <div class="c31">
-                <b style="font-size: 50px;">Major Cites</b>
+                <b class="m1">Major Cites</b>
             </div>
             <div class="c32">
-                <a href="pg-life-property-list-delhi.html" ><img src="delhi.png" class="i5" /></a>
-                <a href="pg-life-property-list-mumbai.html"><img src="mumbai.png" class="i5" /></a>
-                <a href="pg-life-property-list-chennai.html"><img src="chennai.png" class="i5" /></a>
-                <a href="pg-life-property-list-hyderabad.html"><img src="hyderabad.png" class="i5" /></a>
+                <div class="place col-3-md"><a href="pg-life-property-list-delhi.html" ><img src="delhi.png" class="i5" /></a></div>
+                <div class="place col-3-md"><a href="pg-life-property-list-mumbai.html"><img src="mumbai.png" class="i5" /></a></div>
+                <div class="place col-3-md"><a href="pg-life-property-list-chennai.html"><img src="chennai.png" class="i5" /></a></div>
+                <div class="place col-3-md"><a href="pg-life-property-list-hyderabad.html"><img src="hyderabad.png" class="i5" /></a></div>
             </div>
         </div>
 
 
-        <footer class="d">
-             <div class="d1">
-                <a href="pg-life-property-list-delhi.html" style="text-decoration: none;"><p class="p2">PG in Delhi</p></a>
-                <a href="pg-life-property-list-mumbai.html" style="text-decoration: none;" ><p class="p2">PG in Mumbai</p></a>
-                <a href="pg-life-property-list-chennai.html" style="text-decoration: none;"><p class="p2">PG in Chennai</p></a>
-                <a href="pg-life-property-list-hyderabad.html" style="text-decoration: none;"><p class="p2">PG in Hyderabad</p></a>
+        <footer class="z">
+             <div class="z1">
+                <a href="pg-life-property-list-delhi.html" style="text-decoration: none;" class="p21"><p class="p2">PG in Delhi</p></a>
+                <a href="pg-life-property-list-mumbai.html" style="text-decoration: none;" class="p21"><p class="p2">PG in Mumbai</p></a>
+                <a href="pg-life-property-list-chennai.html" style="text-decoration: none;" class="p21"><p class="p2">PG in Chennai</p></a>
+                <a href="pg-life-property-list-hyderabad.html" style="text-decoration: none;" class="p21"><p class="p2">PG in Hyderabad</p></a>
             </div>
-            <div class="d2" style="gap: 10px;">
-                <img src="copyright.svg" class="i3"></img>
-                <p class="p2" > 2020 copyright PG Life</p>
+            <div class="z2" style="gap: 10px;">
+                <span class="material-icons" style="color: white;">copyright</span>
+                <span class="p2" > 2020 copyright PG Life</span>
             </div>
         </footer>
+    
         <script>
             function showsidebar(){
                 const sidebar = document.querySelector('.sidebar')
                 sidebar.style.display='flex'
+                sidebar.style.height='250px'
             }
             function hidesidebar(){
                 const sidebar = document.querySelector('.sidebar')
