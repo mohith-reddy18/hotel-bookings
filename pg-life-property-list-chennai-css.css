@@ -110,9 +110,9 @@ h1, p {
     width: 97% !important;
 }
 .f1{
-    margin-left: 8px;
+    margin-left: 16px;
     margin-top: 20px;
-    width: 90%;
+    width: 95% !important;
     display: flex;
     justify-content: center;
     font-weight: 500;
@@ -139,17 +139,17 @@ h1, p {
 }
 .f2{
     text-align: center;
-    margin-left: 8px;
+    margin-left: 20px;
     margin-top: 20px;
     font-size: 20px;
-    width: 80%;
+    width: 90% !important;
     font-weight: 500;
     gap: 5px;
 }
 .f3{
-    width: 90%;
+    width: 90% !important;
     text-align: center;
-    margin-left: 8px;
+    margin-left: 20px;
     margin-top: 20px;
     font-size: 20px;
 }
