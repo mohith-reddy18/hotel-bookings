@@ -13,7 +13,7 @@ h1, p {
 
 .a{
     top: 0 !important;
-    height: 60px;
+    height: 60px !important;
     width: 100%;
     display: flex;
     position: fixed;
@@ -474,7 +474,7 @@ nav div{
 }
 @media(max-width:650px){
    .a{
-        height: 50px;
+        height: 60px;
     }
     .i1{
         width: 110px;
@@ -499,7 +499,7 @@ nav div{
 }
 @media(max-width:576px){
     .a{
-        height: 45px !important;
+        height: 60px !important;
     }
     .i1{
         width: 100px;
@@ -515,7 +515,7 @@ nav div{
 }
 @media(max-width:450px){
     .a{
-        height: 45px;
+        height: 60px;
     }
     .i1{
         width: 100px;
@@ -534,7 +534,7 @@ nav div{
         width: 100%;
     }
     .a{
-        height: 45px;
+        height: 60px;
     }
     .i1{
         width: 100px;
@@ -564,7 +564,7 @@ nav div{
         padding-top: 40px;
     }
     .a{
-        height: 45px;
+        height: 60px;
     }
     .i1{
         width: 100px;
