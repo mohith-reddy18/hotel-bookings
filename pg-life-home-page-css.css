@@ -400,6 +400,9 @@ nav div{
          gap: 50px !important;
          padding-top: 30px;
     }
+    .c{
+        height:1100px;
+    }
 }
 @media(max-width:576px){
     .label {
