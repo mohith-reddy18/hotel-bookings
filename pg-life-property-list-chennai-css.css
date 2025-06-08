@@ -457,6 +457,7 @@ nav div{
     }
     .sidebar{
         width: 50%;
+        padding-right: 50px;
     }
     .c111{
         width: 100%;
