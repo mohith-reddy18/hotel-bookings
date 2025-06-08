@@ -6,6 +6,7 @@
     padding: 0px;
 }
 .a{
+    top: 0 !important;
     height: 60px;
     width: 100%;
     display: flex;
@@ -94,19 +95,16 @@
     justify-content: center;
 }
 .sidebar{
-    padding-left: 10px;
-    padding-top: 15px;
     height: 100%;
-    width: 50%;
     align-items: center;
-    z-index: 99;
+    z-index: 999;
      height: 100vh;
     width: 250px;
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.945);
+    backdrop-filter: transparent(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
-    border-end-start-radius: 10px;
     right: 0;
     display: none;
     flex-direction: column;
@@ -146,11 +144,12 @@ nav div{
 }
 .c111{
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    margin-bottom: 10px;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;
 }
 .c12{
     display: flex;
@@ -166,19 +165,18 @@ nav div{
     justify-content: flex-end;
     align-items: center;
     gap: 15px;
+    
 }
 .i1{
     width: 130px;
-     margin: 0px;
-}
-.i2{
-    border-radius: 10px;
-    width: 20px;
-    justify-content: flex-end;
-    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 .p1{
-    opacity : 0.5; font-size: 20px;
+    font-size: 18px;
+    align-items: center;
+    color: gray;
+    margin-right: 10px;
 }
 .dv3{
     height: auto;
@@ -794,10 +792,6 @@ nav ul{
     text-transform: uppercase;
     font-weight: 700;
 }
-#i{
-    color:#aaa;
-    text-decoration: none;
-}
 .inside{
     background-color: white;
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
@@ -987,6 +981,3 @@ nav ul{
 .main{
     width: 75%;
 }
-.z2{
-    background-color:black;
-}    
