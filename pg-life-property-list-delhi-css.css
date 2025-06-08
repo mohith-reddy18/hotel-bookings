@@ -34,6 +34,9 @@
 #i{
     color:#aaa;
 }
+.z2{
+    background-color:black;
+}
 .popup{
     opacity: 0;
     pointer-events: none;
