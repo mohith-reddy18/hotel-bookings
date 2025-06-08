@@ -433,6 +433,9 @@ nav div{
          gap: 50px !important;
          padding-top: 30px;
     }
+    .c{
+        height:1100px !important;
+    }
 }
 @media(max-width:450px){
     .label {
@@ -475,6 +478,9 @@ nav div{
     .i5{
         width: 110px;
     }
+    .c{
+        height:1100px !important;
+    }
 }
 @media(max-width :380px){
     .sidebar{
@@ -513,6 +519,9 @@ nav div{
          gap: 50px !important;
          height: 750px !important;
          padding-bottom: 30px;
+    }
+    .c{
+        height:1100px !important;
     }
 }
 @media(max-width:360px){
@@ -559,7 +568,7 @@ nav div{
         padding-top: 0px;
     }
     .c{
-        height: 750px;
+        height:1100px !important;
     }
     .i5{
         width: 100px;
