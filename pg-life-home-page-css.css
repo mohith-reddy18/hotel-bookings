@@ -396,12 +396,12 @@ nav div{
     padding-bottom: 25px;
   }
   .c32{
-        height: 850px !important;
+        height: 800px !important;
          gap: 50px !important;
          padding-top: 30px;
     }
     .c{
-        height:1100px;
+        height:1100px !important;
     }
 }
 @media(max-width:576px){
