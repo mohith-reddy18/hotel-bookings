@@ -2,6 +2,15 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.section {
+    margin: 0;
+    padding: 20px 0;
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
 .a{
     top: 0 !important;
     height: 60px;
