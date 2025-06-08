@@ -367,7 +367,7 @@ nav div{
 }
 @media(max-width:650px){
    .a{
-        height: 50px;
+        height: 60px !important;
     }
     .i1{
         width: 110px;
@@ -431,18 +431,17 @@ nav div{
         font-size: 14px;
         width: 80%;
     }
+    
 }
 @media(max-width:576px){
      .a{
-        height: 40px;
+        height: 60px;
     }
     .gap{
         padding-top: 250px !important;
     }
     .b{
         padding-top: 15px !important;
-        margin-top: 40px !important;
-        height: 40px !important;
     }
     .c{
         height: 220px !important;
@@ -477,10 +476,10 @@ nav div{
 }
 @media(max-width:450px){
     .b{
-        padding-top: 40px !important;
+        margin-top: 30px !important;
     }
     .a{
-        height: 40px;
+        height: 60px;
     }
     .c{
         margin-top: 50px;
@@ -492,8 +491,7 @@ nav div{
         padding-top: 200px !important;
     }
     .b{
-        padding-top: 15px !important;
-        margin-top: 40px !important;  
+        padding-top: 15px !important;  
         height: 40px;
     }
     .slash{
@@ -587,8 +585,6 @@ nav div{
     }
     .b{
         padding-top: 15px !important;
-        margin-top: 40px !important;
-        height: 40px;
     }
     .slash{
         font-size:20px;
@@ -638,7 +634,7 @@ nav div{
         padding-top: 40px;
     }
     .a{
-        height: 40px;
+        height: 60px;
     }
     .i1{
         width: 100px;
@@ -659,9 +655,7 @@ nav div{
     }
     
     .b{
-        padding-top: 15px !important;
-        margin-top: 40px !important;
-        height: 40px;
+        padding-top: 50px !important;
     }
     .slash{
         font-size:20px;
@@ -680,7 +674,8 @@ nav div{
 @media(max-width:300px){
     .b{
         padding-left:15px !important;
-        margin-top: 40px !important;
+        padding-top:0px !important;
+        margin-top: 50px !important;
         height: 55px !important;
         display: flex;
         flex-direction: column;
