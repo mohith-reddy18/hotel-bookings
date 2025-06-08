@@ -521,7 +521,7 @@ nav div{
          padding-bottom: 30px;
     }
     .c{
-        height:1100px !important;
+        height:1000px !important;
     }
 }
 @media(max-width:360px){
@@ -568,7 +568,7 @@ nav div{
         padding-top: 0px;
     }
     .c{
-        height:1100px !important;
+        height:1000px !important;
     }
     .i5{
         width: 100px;
