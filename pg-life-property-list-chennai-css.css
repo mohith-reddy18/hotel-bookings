@@ -79,7 +79,7 @@ h1, p {
     height: auto;
     z-index: 11;
     min-width: 350px;
-    text-align: center;
+    text-align: right;
     display: flex;
     flex-direction: column;
 }
@@ -296,6 +296,7 @@ h1, p {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
+    padding-inline-start: 30px !important;
 }
 .sidebar div{
     width: 100%;
@@ -373,7 +374,7 @@ nav div{
     padding: 0px;
 }
 .p1{
-    font-size: 18px;
+    font-size: 20px;
     align-items: center;
     color: gray;
     margin-right: 10px;
