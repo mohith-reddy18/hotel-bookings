@@ -381,7 +381,7 @@ nav div{
     }
     .b{
         padding-top: 15px !important; 
-        margin-top: 50px !important;
+        margin-top: 60px !important;
         height: 40px;
     }
     .guest{
@@ -408,7 +408,7 @@ nav div{
   }
   .b{
         padding-top: 15px !important;
-        margin-top: 50px !important;
+        margin-top: 60px !important;
         height: 40px !important;
     }
     .slash{
@@ -476,7 +476,8 @@ nav div{
 }
 @media(max-width:450px){
     .b{
-        margin-top: 30px !important;
+        
+        margin-top: 60px !important;
     }
     .a{
         height: 60px;
@@ -655,7 +656,7 @@ nav div{
     }
     
     .b{
-        padding-top: 50px !important;
+        padding-top: 15px !important;
     }
     .slash{
         font-size:20px;
