@@ -296,7 +296,7 @@ h1, p {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-    padding-inline-start: 30px !important;
+    padding-inline-start: 20px !important;
 }
 .sidebar div{
     width: 100%;
