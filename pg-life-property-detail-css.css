@@ -746,7 +746,7 @@ nav div{
 
 nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 0 0px;
     text-decoration: none;
     display: flex;
     align-items: center;
