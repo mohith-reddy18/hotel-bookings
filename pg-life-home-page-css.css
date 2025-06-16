@@ -1,9 +1,11 @@
+
 *{
     margin: 0px;
     box-sizing: border-box;
     z-index: 3;
     padding: 0px;
      font-family: 'Open Sans', sans-serif;
+     text-size-adjust:100%;
 }
 body{
     width: 100%;
@@ -74,7 +76,7 @@ body{
     width: 100%;
 }
 .sidebar span{
-    width: 100%;
+    width: auto;
 }
 .sidebar li{
     width: 100%;
