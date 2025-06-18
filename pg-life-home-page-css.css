@@ -15,11 +15,11 @@ body{
     font-family: 'Open Sans',sans-serif;
 }
 .a{
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     position: fixed;
-    background-color: whitesmoke;
+    background-color: rgb(237, 235, 235);
     z-index: 10;
 }
 .b{
@@ -28,8 +28,8 @@ body{
     max-height: 500px;
     min-width: 300px !important;
     width: 100%;
+    padding-top: 70px !important;
     aspect-ratio: 16/13;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,11 +55,10 @@ body{
     padding-left: 10px;
     padding-top: 15px;
     height: 100%;
-    width: 50%;
     align-items: center;
     z-index: 99;
      height: 100vh;
-    width: 250px;
+    width: 350px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
     position: fixed;
@@ -72,9 +71,6 @@ body{
     justify-content: flex-start;
     gap: 20px;
 }
-.sidebar div{
-    width: 100%;
-}
 .sidebar span{
     width: auto;
 }
@@ -82,7 +78,7 @@ body{
     width: 100%;
 }
 .sidebar a{
-    width: 100%;
+    width: 40%;
 }
 nav ul{
     width: 100%;
@@ -139,7 +135,7 @@ nav div{
     opacity : 0.5; font-size: 20px;
 }
 .z1{
-    height: 50%;
+    height: 50px;
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -149,12 +145,11 @@ nav div{
 }
 .z2{
     padding-top: 10px;
-    height: 50%;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .p2{
     color:white;
@@ -182,7 +177,7 @@ nav div{
 }
 .button{
     color: rgb(255, 255, 255);
-    background: green;
+    background: rgb(17, 182, 17);
     margin-left: 0%;
     margin-top: 10px;
     font-size: 20px;
@@ -193,16 +188,17 @@ nav div{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: background .3s ease-in-out;
+    transform: background .6s ease-in-out;
 }
 .button:hover{
-    background: linear-gradient(to right, rgb(156, 203, 16), rgb(224, 40, 40));
+    background: rgba(5, 205, 5, 0.986);
 }
 .button span { 
     position: relative;
     z-index: 2; 
 }
 .input{
+    padding-left: 5px !important;
     height: 50px;
     width: 110%;
     font-size: 30px;
@@ -243,10 +239,6 @@ nav div{
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#i{
-    color:#aaa;
-    text-decoration: none;
-}
 .menu-button{
     display: none;
     align-items: end;
@@ -257,7 +249,7 @@ nav div{
 
 @media(max-width:900px){
     .b{
-        padding-top:60px !important;
+        padding-top:70px !important;
     }
     .c32{
         height: 300px;
@@ -362,13 +354,10 @@ nav div{
     padding-top: 0px;
   }
    .a{
-        height: 60px !important;
+        height: 70px !important;
     }
     .i1{
         width: 110px;
-    }
-    .menu{
-        width: 35px !important;
     }
 }
 @media (max-width: 600px) {
@@ -395,6 +384,7 @@ nav div{
     background-color: black;
   }
   .z2{
+    margin-top:10px !important;
     padding-bottom: 25px;
   }
   .c32{
@@ -422,13 +412,10 @@ nav div{
         width: 110% !important; 
     }
      .a{
-        height: 60px;
+        height: 70px;
     }
     .i1{
         width: 100px;
-    }
-    .menu{
-        width: 30px !important;
     }
     .c32{
         height: 750px !important;
@@ -437,6 +424,11 @@ nav div{
     }
     .c{
         height:1100px !important;
+    }
+}
+@media(max-width:480px){
+    .sidebar{
+        width: 100% !important;
     }
 }
 @media(max-width:450px){
@@ -455,16 +447,13 @@ nav div{
         width: 110% !important; 
     }
     .b{
-        padding-top: 40px;
+        padding-top: 60px !important;
     }
     .a{
-        height: 60px;
+        height: 60px !important;
     }
     .i1{
         width: 100px;
-    }
-    .menu{
-        width: 30px !important;
     }
     .i4{
         padding-top: 40px !important;
@@ -482,6 +471,32 @@ nav div{
     }
     .c{
         height:1100px !important;
+    }
+}
+@media(max-width:440px){
+    .inside{
+        width: 95% !important;
+    }
+    .f1{
+        height: 35px;
+    }
+    #ii1{
+        height: 35px !important;
+    }
+    .input1{
+        height: 35px !important;
+        font-size: 20px !important;
+    }
+    .button2{
+        height: 35px !important;
+    }
+    .f3{
+        margin-left: 13px !important;
+    }
+}
+@media(max-width:400px){
+    .inside2{
+        width: 90% !important;
     }
 }
 @media(max-width :380px){
@@ -509,13 +524,10 @@ nav div{
         width: 120% !important; 
     }
   .a{
-        height: 40px;
+        height: 60px;
     }
     .i1{
         width: 100px;
-    }
-    .menu{
-        width: 30px !important;
     }
     .c32{
          gap: 50px !important;
@@ -525,10 +537,14 @@ nav div{
     .c{
         height:1000px !important;
     }
+    .f2{
+        font-size: 18px !important;
+    }
+    
 }
 @media(max-width:360px){
      .inside{
-        width: 100%;
+        width: 95% !important;
     }
     .b{
         padding-top: 40px ;
@@ -585,16 +601,13 @@ nav div{
     min-height: 130px !important;
     }
     .space{
-        padding-top: 40px;
+        padding-top: 55px;
     }
     .a{
-        height: 60px;
+        height: 55px;
     }
     .i1{
         width: 100px;
-    }
-    .menu{
-        width: 30px !important;
     }
     
 }      
@@ -649,25 +662,36 @@ nav ul{
     width: 400px;
     height: auto;
     z-index: 11;
-    min-width: 350px;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.inside2{
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 350px ;
+    height: auto;
+    z-index: 11;
+    min-width: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .div1{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #ced4da;
     background-color: #ebeef1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
-    height: auto;
-    justify-content: space-between;
-    padding-top: 15px;
+    height: 50px;
     padding-left: 15px;
     padding-right: 15px;
-     background-color:wheatsmoke;
-    padding-bottom:15px;
+    background-color:wheatsmoke;
 }
 .div2{
     margin: 0px;
@@ -684,7 +708,7 @@ nav ul{
     font-weight: 500;
 }
 .input1{
-    padding: 15px;
+    padding: 5px;
     height: 40px;
     width: 100%;
     font-size: 25px;
@@ -713,9 +737,9 @@ nav ul{
     gap: 5px;
 }
 .f3{
-    width: 90% !important;
+    width: 95% !important;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 18px;
     margin-top: 20px;
     font-size: 20px;
 }
@@ -727,6 +751,11 @@ nav ul{
     height: 40px;
     border-radius: 5px;
     font-weight: 700;
+    transition: background-color .3s ease-in-out;
+    font-size: 18px;
+}
+.button2:hover{
+    background-color:#25b4a8;
 }
 .div3{
     background-color: whitesmoke;
@@ -751,10 +780,57 @@ nav ul{
 }
 .space{
     display: none; 
-    padding-top: 60px;
+    padding-top: 70px;
     top: 0;
 }
-.menu{
-    filter: brightness(40%);
-    width: 40px; 
+#menu{
+    font-size: 35px;
+    opacity: 0.75;
+}
+.glow{
+    background-color: whitesmoke;
+    padding: 6px 7px;
+    height: auto;
+    width: auto;
+    border: 3px solid #039696;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #039696;
+    transition: background-color .3s ease-in-out;
+}
+.glow:hover{
+    background-color: #039696;
+}
+.glow:hover span{
+    color: white !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
+#glow{
+    background-color: whitesmoke;
+    padding: 6px 7px;
+    height: auto;
+    width: auto;
+    border: 3px solid #039696;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #039696;
+    transition: background-color .3s ease-in-out;
+}
+#glow:hover{
+    background-color: #039696;
+    opacity: 1 !important;
+    color: white !important;
+}
+#glow:hover span{
+    color: white !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
+.input:focus{
+    border: none !important;
+    outline: none !important;
+}
+#i{
+    font-weight: 600;
+    color:#797c7e;
+    text-decoration: none;
 }
