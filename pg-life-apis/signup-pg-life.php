@@ -42,7 +42,8 @@
         exit;
     }
     echo  "your acc has been created successfully!";
-    header("Location: ../pg-life-home.php");
+    header("Location:index.php");
 
     mysqli_close($conn);
+
 ?>
