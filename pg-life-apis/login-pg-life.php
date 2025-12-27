@@ -35,7 +35,8 @@
     $_SESSION['full_name']= $row['full_name'];
     $_SESSION['email']= $row['email'];
     echo "User ID: " . $_SESSION['user_id'] . "<br>";
-    header("location:/PGLife/pg-life-home.php");
+    header("location:/index.php");
     mysqli_close($conn);
+
 
 ?>
